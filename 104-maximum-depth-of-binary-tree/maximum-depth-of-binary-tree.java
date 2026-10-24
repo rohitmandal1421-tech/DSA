@@ -1,9 +1,9 @@
 class Solution {
-    int ans = 0;
+    
     public int maxDepth(TreeNode root) {
         
-        height(root);
-        return ans;
+       return height(root);
+        
     }
     public int height(TreeNode root){
         if(root == null){
@@ -16,6 +16,6 @@ class Solution {
 
         
 
-        return ans = Math.max(left,right)+1;
+        return Math.max(left,right)+1;
     }
 }
